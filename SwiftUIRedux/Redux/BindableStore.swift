@@ -39,5 +39,3 @@ final class BindableStore<S>: ObservableObject, StoreSubscriber where S: StateTy
         self.state = state
     }
 }
-
-
