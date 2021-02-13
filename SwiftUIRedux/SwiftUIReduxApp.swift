@@ -10,8 +10,6 @@ import SwiftUI
 import ReSwift
 
 
-
-
 let reducer = combineReducers(
     todosReducer,
     usersReducer

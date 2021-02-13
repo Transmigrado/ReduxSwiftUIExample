@@ -21,6 +21,8 @@
 		4F7F981225D80E1B005EB827 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F981125D80E1B005EB827 /* User.swift */; };
 		4F7F981825D80F27005EB827 /* todosReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F981725D80F27005EB827 /* todosReducer.swift */; };
 		4F7F981D25D80F4B005EB827 /* usersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F981C25D80F4B005EB827 /* usersReducer.swift */; };
+		4F7F982725D80FC3005EB827 /* UsersScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F982625D80FC3005EB827 /* UsersScreenView.swift */; };
+		4F7F982C25D80FCF005EB827 /* TodosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F982B25D80FCF005EB827 /* TodosScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		4F7F981125D80E1B005EB827 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4F7F981725D80F27005EB827 /* todosReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todosReducer.swift; sourceTree = "<group>"; };
 		4F7F981C25D80F4B005EB827 /* usersReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersReducer.swift; sourceTree = "<group>"; };
+		4F7F982625D80FC3005EB827 /* UsersScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersScreenView.swift; sourceTree = "<group>"; };
+		4F7F982B25D80FCF005EB827 /* TodosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 		4F7F97BA25D7FE35005EB827 /* SwiftUIRedux */ = {
 			isa = PBXGroup;
 			children = (
+				4F7F982425D80FB0005EB827 /* ui */,
 				4F7F981625D80F18005EB827 /* Reducers */,
 				4F7F980825D80DE6005EB827 /* Model */,
 				4F7F97F225D80D02005EB827 /* Redux */,
@@ -175,6 +180,23 @@
 				4F7F981C25D80F4B005EB827 /* usersReducer.swift */,
 			);
 			path = Reducers;
+			sourceTree = "<group>";
+		};
+		4F7F982425D80FB0005EB827 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				4F7F982525D80FB4005EB827 /* screens */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		4F7F982525D80FB4005EB827 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+				4F7F982625D80FC3005EB827 /* UsersScreenView.swift */,
+				4F7F982B25D80FCF005EB827 /* TodosScreenView.swift */,
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,12 +337,14 @@
 				4F7F97FC25D80D5D005EB827 /* AppState.swift in Sources */,
 				4F7F981D25D80F4B005EB827 /* usersReducer.swift in Sources */,
 				4F7F980A25D80DF9005EB827 /* Todo.swift in Sources */,
+				4F7F982725D80FC3005EB827 /* UsersScreenView.swift in Sources */,
 				4F7F97F425D80D0F005EB827 /* BindableStore.swift in Sources */,
 				4F7F97BE25D7FE35005EB827 /* ContentView.swift in Sources */,
 				4F7F981825D80F27005EB827 /* todosReducer.swift in Sources */,
 				4F7F97BC25D7FE35005EB827 /* SwiftUIReduxApp.swift in Sources */,
 				4F7F980425D80D7D005EB827 /* CombineReducer.swift in Sources */,
 				4F7F981225D80E1B005EB827 /* User.swift in Sources */,
+				4F7F982C25D80FCF005EB827 /* TodosScreenView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

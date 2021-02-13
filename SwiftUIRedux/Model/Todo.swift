@@ -11,4 +11,5 @@ struct Todo {
     var id = UUID()
     var name = ""
     var description = ""
+    var user: User?
 }
