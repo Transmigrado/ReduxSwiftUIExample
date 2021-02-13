@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,7 @@
 		4F7F97C325D7FE37005EB827 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7F97C225D7FE37005EB827 /* Preview Assets.xcassets */; };
 		4F7F97CE25D7FE37005EB827 /* SwiftUIReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F97CD25D7FE37005EB827 /* SwiftUIReduxTests.swift */; };
 		4F7F97D925D7FE37005EB827 /* SwiftUIReduxUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F97D825D7FE37005EB827 /* SwiftUIReduxUITests.swift */; };
+		4F7F97EE25D7FF5F005EB827 /* ReSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 4F7F97ED25D7FF5F005EB827 /* ReSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4F7F97EE25D7FF5F005EB827 /* ReSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -146,6 +148,9 @@
 			dependencies = (
 			);
 			name = SwiftUIRedux;
+			packageProductDependencies = (
+				4F7F97ED25D7FF5F005EB827 /* ReSwift */,
+			);
 			productName = SwiftUIRedux;
 			productReference = 4F7F97B825D7FE35005EB827 /* SwiftUIRedux.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +222,9 @@
 				Base,
 			);
 			mainGroup = 4F7F97AF25D7FE35005EB827;
+			packageReferences = (
+				4F7F97EC25D7FF5F005EB827 /* XCRemoteSwiftPackageReference "ReSwift" */,
+			);
 			productRefGroup = 4F7F97B925D7FE35005EB827 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -580,6 +588,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F7F97EC25D7FF5F005EB827 /* XCRemoteSwiftPackageReference "ReSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReSwift/ReSwift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F7F97ED25D7FF5F005EB827 /* ReSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F7F97EC25D7FF5F005EB827 /* XCRemoteSwiftPackageReference "ReSwift" */;
+			productName = ReSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4F7F97B025D7FE35005EB827 /* Project object */;
 }
