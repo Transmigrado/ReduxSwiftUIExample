@@ -10,21 +10,22 @@ import SwiftUI
 struct TodosScreenView: View {
     
     @EnvironmentObject var store: BindableStore<AppState>
-    
+    @State var active = false
     var body: some View {
         NavigationView {
-            List(self.store.state.todos.list) { item in
-                VStack{
-                    Text("\(item.name)")
-                    Text("\(item.description)")
+            Group{
+                List(self.store.state.todos.list) { item in
+                    TodoItemRow(item:item)
                 }
-           }
-           .navigationBarTitle("Todos")
-           .toolbar {
-               Button("Agregar") {
-                store.dispatch(AddTodo())
-               }
-           }
+                .navigationBarTitle("Todos")
+                .toolbar {
+                   Button("Agregar") {
+                    store.dispatch(AddTodo())
+                   }
+                }
+                
+                NavigationLink(destination: TodoDetailScreenView(), isActive: $active) { EmptyView() }
+            }
         }
     }
 }

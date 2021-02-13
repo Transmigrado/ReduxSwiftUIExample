@@ -13,8 +13,6 @@ func todosReducer(action: Action, state: AppState?) -> AppState {
    
     var state = state ?? AppState()
     
-    
-    
     switch action {
         case _ as AddTodo:
             state.todos.list.append(Todo(name: "Nuevo"))

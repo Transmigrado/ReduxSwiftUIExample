@@ -15,6 +15,7 @@ struct ContentView: View {
                            Image("ic_todo")
                            Text("Todo")
                        }).tag(0)
+            
             UsersScreenView()
                 .tabItem({
                            Image("ic_user")
