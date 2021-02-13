@@ -14,7 +14,7 @@ final class BindableStore<S>: ObservableObject, StoreSubscriber where S: StateTy
     @Published var state: S
     private let store: Store<S>
 
-    func dispatch(_ action: Action) -> Void {
+    func dispatch(_ action: Action) {
         store.dispatch(action)
     }
 
@@ -25,7 +25,10 @@ final class BindableStore<S>: ObservableObject, StoreSubscriber where S: StateTy
         automaticallySkipsRepeats: Bool = true
         ) {
 
-        store = Store(reducer: reducer, state: state, middleware: middleware, automaticallySkipsRepeats: automaticallySkipsRepeats)
+        store = Store(reducer: reducer,
+                      state: state,
+                      middleware: middleware,
+                      automaticallySkipsRepeats: automaticallySkipsRepeats)
 
         self.state = store.state
 
