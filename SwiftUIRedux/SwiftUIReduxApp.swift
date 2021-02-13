@@ -15,7 +15,6 @@ let reducer = combineReducers(
 
 let store = BindableStore<AppState>(reducer: reducer, state: AppState())
 
-
 @main
 struct SwiftUIReduxApp: App {
     var body: some Scene {

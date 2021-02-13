@@ -5,11 +5,9 @@
 //  Created by Jorge Acosta on 13-02-21.
 //
 
-
 import Combine
 import SwiftUI
 import ReSwift
-
 
 final class BindableStore<S>: ObservableObject, StoreSubscriber where S: StateType {
 

@@ -14,7 +14,6 @@ struct AppState: StateType, Equatable {
     var users = Users()
 }
 
-
 struct Todos : Identifiable, Equatable {
     static func == (lhs: Todos, rhs: Todos) -> Bool {
         return lhs.id == rhs.id

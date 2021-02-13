@@ -9,7 +9,6 @@ import Foundation
 
 import ReSwift
 
-
 func usersReducer(action: Action, state: AppState?) -> AppState {
    
     var state = state ?? AppState()
