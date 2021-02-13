@@ -23,6 +23,7 @@
 		4F7F981D25D80F4B005EB827 /* usersReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F981C25D80F4B005EB827 /* usersReducer.swift */; };
 		4F7F982725D80FC3005EB827 /* UsersScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F982625D80FC3005EB827 /* UsersScreenView.swift */; };
 		4F7F982C25D80FCF005EB827 /* TodosScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F982B25D80FCF005EB827 /* TodosScreenView.swift */; };
+		4F7F983125D812A8005EB827 /* Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F7F983025D812A8005EB827 /* Actions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		4F7F981C25D80F4B005EB827 /* usersReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = usersReducer.swift; sourceTree = "<group>"; };
 		4F7F982625D80FC3005EB827 /* UsersScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersScreenView.swift; sourceTree = "<group>"; };
 		4F7F982B25D80FCF005EB827 /* TodosScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosScreenView.swift; sourceTree = "<group>"; };
+		4F7F983025D812A8005EB827 /* Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Actions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,6 +162,7 @@
 				4F7F97F325D80D0F005EB827 /* BindableStore.swift */,
 				4F7F97FB25D80D5D005EB827 /* AppState.swift */,
 				4F7F980325D80D7D005EB827 /* CombineReducer.swift */,
+				4F7F983025D812A8005EB827 /* Actions.swift */,
 			);
 			path = Redux;
 			sourceTree = "<group>";
@@ -343,6 +346,7 @@
 				4F7F981825D80F27005EB827 /* todosReducer.swift in Sources */,
 				4F7F97BC25D7FE35005EB827 /* SwiftUIReduxApp.swift in Sources */,
 				4F7F980425D80D7D005EB827 /* CombineReducer.swift in Sources */,
+				4F7F983125D812A8005EB827 /* Actions.swift in Sources */,
 				4F7F981225D80E1B005EB827 /* User.swift in Sources */,
 				4F7F982C25D80FCF005EB827 /* TodosScreenView.swift in Sources */,
 			);

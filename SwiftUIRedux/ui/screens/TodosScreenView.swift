@@ -8,8 +8,24 @@
 import SwiftUI
 
 struct TodosScreenView: View {
+    
+    @EnvironmentObject var store: BindableStore<AppState>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+            List(self.store.state.todos.list) { item in
+                VStack{
+                    Text("\(item.name)")
+                    Text("\(item.description)")
+                }
+           }
+           .navigationBarTitle("Todos")
+           .toolbar {
+               Button("Agregar") {
+                store.dispatch(AddTodo())
+               }
+           }
+        }
     }
 }
 

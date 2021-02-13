@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Todo {
+struct Todo: Identifiable {
     var id = UUID()
     var name = ""
     var description = ""

@@ -10,7 +10,7 @@ import ReSwift
 import SwiftUI
 
 struct AppState: StateType, Equatable {
-    var todo = Todos()
+    var todos = Todos()
     var users = Users()
 }
 

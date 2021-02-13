@@ -10,12 +10,12 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         TabView{
-           UsersScreenView()
+            TodosScreenView()
                 .tabItem({
                            Image("ic_todo")
                            Text("Todo")
                        }).tag(0)
-            TodosScreenView()
+            UsersScreenView()
                 .tabItem({
                            Image("ic_user")
                            Text("Usuarios")

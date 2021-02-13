@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct User {
+struct User: Identifiable {
     var id = UUID()
     var name = ""
     var lastName = ""

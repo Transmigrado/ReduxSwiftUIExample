@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct UsersScreenView: View {
+    
+    @EnvironmentObject var store: BindableStore<AppState>
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView {
+           List {
+             Text("Hola")
+           }
+           .navigationBarTitle("Usuarios")
+                 
+        }
     }
 }
 
