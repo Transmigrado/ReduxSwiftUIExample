@@ -6,6 +6,20 @@
 //
 
 import SwiftUI
+import SwiftUI
+import ReSwift
+
+
+
+
+let reducer = combineReducers(
+    todosReducer,
+    usersReducer
+    )
+
+let store = BindableStore<AppState>(reducer: reducer, state: AppState())
+
+
 
 @main
 struct SwiftUIReduxApp: App {
